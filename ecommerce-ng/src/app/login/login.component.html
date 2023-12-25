@@ -1,0 +1,21 @@
+<div class="login-form">
+    <h2>Login</h2>
+    <form id="login-form" [formGroup]="form">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input matInput placeholder="Email" type="email" [email]="true" formControlName="email" id="username">
+        <mat-error *ngIf="form.value.email == ''">Enter Email</mat-error>
+      </div>
+  
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input matInput placeholder="Password" type="password" formControlName="password" id="password">
+        <mat-error *ngIf="form.value.password == ''">Enter Password</mat-error>
+      </div>
+      <div class="login-button">
+        <button mat-raised-button color="primary" type="submit" (click)="logIn()" [disabled]="form.invalid">Login</button>
+        <button mat-raised-button color="primary" type="submit" (click)="showRegistrationForm()">Register</button>
+      </div>
+    </form>
+  </div>
+  

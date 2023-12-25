@@ -1,0 +1,67 @@
+.navbar {
+  background-color: #333; // Background color for the navbar
+  color: #fff; // Text color
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  a {
+    color: #fff; // Text color for links
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline; // Underline links on hover
+    }
+  }
+
+  .left {
+    margin-left: 10px;
+  }
+
+  .right {
+    margin-right: 10px;
+  }
+  
+}
+
+select {
+  border: 1px solid #333;
+  background-color: transparent;
+  width:100%;
+}
+
+.banner {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  padding: 5%;
+  background-color: #673AB7; // Background color for the banner
+  color: #fff; // Text color
+
+  /* Add a shadow for depth */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  /* Add a subtle border radius */
+  border-radius: 5px;
+}
+
+.logo {
+  width: 10%;
+  height: auto;
+}
+
+.text{
+  color: #fff; // Text color for links
+  text-decoration: none;
+  font-size: 13px;
+
+  &:hover {
+    text-decoration: underline; // Underline links on hover
+  }
+}
+
+option { 
+  background-color: #333;
+}

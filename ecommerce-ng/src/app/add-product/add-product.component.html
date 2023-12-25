@@ -1,0 +1,58 @@
+<div>
+		<div class="container">
+			<form class="form-group">
+				<div style="font-weight: bold;" class="text-center">
+					<h2>Add Product</h2>
+				</div>
+				<div></div>
+				<div>
+					<div class="row">
+						<label for="last_name">Product Name</label> <input type="text"
+							placeholder="Enter Product Name" name="name"
+							id="last_name" required>
+					</div>
+					<div class="row">
+						<label for="producttype">Product Type</label> <select name="type"
+							id="producttype" required>
+							<option value="mobile">MOBILE</option>
+							<option value="tv">TV</option>
+							<option value="camera">CAMERA</option>
+							<option value="laptop">LAPTOP</option>
+							<option value="speaker">SPEAKER</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<label for="last_name">Product Description</label>
+					<textarea name="info" id="last_name" required></textarea>
+				</div>
+				<div>
+					<div class="row">
+						<label for="last_name">Unit Price</label> <input type="number"
+							placeholder="Enter Unit Price" name="price"
+							id="last_name" required>
+					</div>
+					<div class="row">
+						<label for="last_name">Stock Quantity</label> <input type="number"
+							placeholder="Enter Stock Quantity" name="quantity"
+							id="last_name" required>
+					</div>
+				</div>
+				<div>
+					<div class="row">
+						<label for="last_name">Product Image</label> <input type="file"
+							placeholder="Select Image" name="image"
+							id="last_name" required>
+					</div>
+				</div>
+				<div class="box">
+					<div class="row" style="margin-bottom: 2px;">
+						<button mat-raised-button color="primary" type="reset" class="btn btn-danger">Reset</button>
+					</div>
+					<div class="row">
+						<button mat-raised-button color="primary" type="submit" class="btn btn-success">Add Product</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>

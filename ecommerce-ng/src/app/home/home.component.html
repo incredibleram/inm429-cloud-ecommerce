@@ -1,0 +1,8 @@
+<div class="search-bar" *ngIf="showSearch">
+    <input matInput  type="text" placeholder="Search">
+    <button class="button" mat-raised-button color="primary" (click)="performSearch()">Search</button>
+</div>
+<div class="product-frame">
+    <app-product-card></app-product-card>
+    <app-product-card></app-product-card>
+</div>

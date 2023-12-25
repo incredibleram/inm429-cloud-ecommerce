@@ -1,0 +1,28 @@
+<div class="navbar">
+    <div class="left">
+      <a id="home-button" routerLink="/home"><img class = "logo" src="assets/icons/home.png" alt="Home Logo"></a>
+    </div>
+    <div class="right">
+      <div class="right">
+        <a id="logout-link" routerLink="/" (click) = "logout()">Logout</a>
+      </div>
+      <div *ngIf=isAdmin class="right">
+        <a id="stock-link" routerLink="/stock">Stock</a>
+      </div>
+      <div *ngIf=isAdmin class="right">
+        <a id="orders-link" routerLink="/orders">Orders</a>
+      </div>
+      <div *ngIf=isAdmin class="dropdown">
+        <select id="product-mod" class="text" (click)="navigateToPage($event)"
+          (change)="navigateToPage($event)">
+          <option value="addProduct">Add Product</option>
+          <option value="updateProduct">Update Product</option>
+        </select>
+      </div>
+    </div>
+  </div>
+<div class="banner">
+    Cloud E-Commerce
+</div>
+  
+  

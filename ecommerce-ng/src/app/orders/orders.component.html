@@ -1,0 +1,34 @@
+<div class="text-center"
+		style="color: #333; font-size: 24px; font-weight: bold;">UnShipped
+		Orders</div>
+	<div class="container-fluid">
+		<div class="table-responsive ">
+			<table class="table table-hover table-sm">
+				<thead
+					style="background-color: #333; color: white; font-size: 16px;">
+					<tr>
+						<th>TransactionId</th>
+						<th>ProductId</th>
+						<th>User Email Id</th>
+						<th>Address</th>
+						<th>Quantity</th>
+						<th>Status</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody style="background-color: white;">
+					<tr>
+						<td>1</td>
+						<td><a>234</a></td>
+						<td>test</td>
+						<td>test addr</td>
+						<td></td>
+						<td>READY_TO_SHIP</td>
+						<td><a
+							href="ShipmentServlet?orderid=<%=order.getTransactionId()%>&amount=<%=order.getAmount()%>&userid=<%=userId%>&prodid=<%=order.getProductId()%>"
+							class="btn btn-success">SHIP NOW</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
